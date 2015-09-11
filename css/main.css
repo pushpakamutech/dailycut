@@ -1,0 +1,67 @@
+@font-face{font-family: federicohandwriting-webfont;
+           src: url(../fonts/federicohandwriting-webfont.ttf)}
+@font-face {
+    font-family: AvenirNextLTPro-Regular;
+    src: url(../fonts/AvenirNextLTPro-Regular.ttf);
+}
+@font-face {
+    font-family: AvenirNextLTPro-LightCondensed;
+    src: url(../fonts/AvenirNextLTPro-UltLtCnIt.ttf);
+}
+body{margin: 0; padding: 0; font-family:AvenirNextLTPro-LightCondensed; font-size: 18px; color: #323232;}
+.head_bg{ background: url(../images/head_bg.jpg) repeat-x ; min-height: 60px; position: fixed;
+          width: 100%; z-index: 100;}
+.logo{ margin:5px 0 0 0;  padding:0;}
+.soc_icon{margin:5% 0 0 0; text-align: right;    width: 100%;}
+.soc_icon ul{ margin: 0; padding: 0; list-style-type: none;}
+.soc_icon ul li{ display: inline; padding: 0 6% 0 6%; }
+.soc_icon ul li a{color: #fff; line-height: 48px;  }
+.soc_icon ul li:last-child {
+    padding: 0 0 0 6%;
+}
+/*.egg_bg{background: #fcfcfb;}*/
+.egg{ background:url(../images/egg_bg1.jpg) no-repeat;  background-size: 100% auto; }
+.conn_tex{ /*padding:29% 0 20.5% 11%;*/ padding:29% 0 29% 0; height: 102px;}
+.cabg{
+    /*    background: url(../images/cabage.pngs) no-repeat; padding: 10% 0 25% 0; */
+}
+.story{ margin: 28% 0 0 0;}
+.story_col{color: #363636;}
+.your_food{margin: 10% 0 3% 0;}
+.chiken_mar{margin: 3% 0 3% 0;}
+.fish{ background: url(../images/fish.jpg) no-repeat;
+       background-size:100% auto;
+
+       /*       padding: 10% 0;*/
+       color: #fff;
+       padding: 16% 0 29%;
+}
+.bor2{ border-bottom: 3px solid #000;}
+.bor{ border-bottom: 1px solid #000;}
+.bor-up{ border-top: 1px solid #000;}
+.nopading{ margin:0 !important; padding:0 !important;}
+.row_pading{ padding: 1% 0 1% 0;}
+.pro_line{ line-height: 28px;}
+.htitle{ font-family:federicohandwriting-webfont;
+         font-size:42px;
+         color: #323232; }
+.contact_main{margin: 10% 0 0 0;}
+
+.pro_tit{font-family:AvenirNextLTPro-Regular;
+         font-size:18px; color: #000;}
+.nutro{font-family: 'Oswald', sans-serif; font-size: 16px; color: #5b5b5b;}
+.nutro_fact{font-size: 32px; color: #232323;}
+.nutro_light{ color: #5b5b5b; font-weight: 300; font-family: 'Oswald', sans-serif;}
+.base{color: #232323; padding: 1% 0;}
+.story_food{ margin: 0 0 0 -43%;}
+.circle_size{font-size: 10px;}
+.mushroom{margin: -5% 0 0 10%;}
+.btn-white{background: #fff;}
+.nue_tit{ font-weight: 600;}
+.nue_tit700{font-weight: 700; font-family: 'Oswald', sans-serif;}
+.dot{margin: -5px 0 0 0;}
+.modal-dialog{ color: #000;}
+.product_count{ margin-bottom: 10px;}
+.dot-line{ line-height: 20px;}
+.logo-img{ margin: 0 0 0 -10px;}
+

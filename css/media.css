@@ -1,0 +1,36 @@
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 990px) {
+    
+    .mushroom {
+    margin: 0 0 0 0;
+}
+}
+@media screen and (max-width: 980px) {
+    .story {
+        margin: 11% 0 0;
+    }
+.story_food {
+    margin: 0 0 0 0;
+}
+}
+@media screen and (max-width: 768px) {
+    body{ font-size: 14px; }
+    .htitle{
+        font-size:30px;
+    }
+    .conn_tex {
+    padding: 15% 0 28%; 
+}
+}
+@media screen and (max-width: 480px) {
+    .soc_icon ul li {
+        display: inline;
+        margin: 0 2%;
+    }
+   .conn_tex {
+/*    padding: 15% 0 20%;  */
+} 
+}
+

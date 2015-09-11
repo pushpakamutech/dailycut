@@ -1,0 +1,1008 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+        <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+        <link href="css/main.css" type="text/css" rel="stylesheet">
+        <link href="css/media.css" type="text/css" rel="stylesheet">
+
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <!--        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/object.create-shim.js"></script>
+        <script type="text/javascript" src="js/realistic-typewriter.js"></script>
+        <!--        <script type="text/javascript" src="js/terminal.js"></script>-->
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <script src ="js/fittex.js"></script>
+        <style>
+            #intro {
+                /*                position: absolute;
+                                top: 200;*/
+                /*                width:80%;
+                                height:50%;
+                                margin: 20% 10%;*/
+                /*                width:80%;
+                                height:50%;
+                */
+                /*                position: absolute;
+                                top: 200;*/
+            }
+            #intro2 {
+                /*                position: absolute;
+                                top: 200;*/
+            }
+            #title {
+                /*                position: absolute;
+                                top: 200;*/
+                /*                margin: 10% 10%;*/
+            }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                realisticTypewriter = new RealisticTypewriter();
+                intro1 = document.getElementById("intro1");
+                intro11 = document.getElementById("intro11");
+                intro22 = document.getElementById("intro22");
+                intro33 = document.getElementById("intro33");
+                intro2 = document.getElementById("intro2");
+                intro3 = document.getElementById("intro3");
+
+                // OK, I know the code could look better, but this is just a quick example
+                setTimeout(function() {
+                    realisticTypewriter.type("Clean eating doesn’t have to mean", intro1, function() {
+                        realisticTypewriter.type("hating life", intro11, function() {
+                            setTimeout(function() {
+                                $('#intro1').fadeOut(500);
+                                $('#intro11').fadeOut(500);
+                                realisticTypewriter.type("Making clean eating suck less, one protein ", intro2, function() {
+                                    //realisticTypewriter.accuracy = 100;
+                                    realisticTypewriter.type("salad at a time", intro22, function() {
+                                        setTimeout(function() {
+                                            $('#intro2').fadeOut(500);
+                                            $('#intro22').fadeOut(500);
+                                            realisticTypewriter.type("Whoever said clean eating can’t be enjoyable was ", title, function() {
+                                                realisticTypewriter.type("doing it all wrong", intro33, function() {
+                                                    setTimeout(function() {
+
+                                                    }, 1000);
+                                                });
+                                            });
+                                        }, 1000);
+                                    });
+                                });
+                            }, 1000);
+                        });
+                    });
+                }, 200);
+            });
+            $("#fittext1").fitText();
+            $("#fittext2").fitText(1.2);
+            $("#fittext3").fitText(1.1, {minFontSize: '50px', maxFontSize: '75px'});
+
+
+            var products = {
+                chicken_brest: {calories: '259', calories_from_fat: '52', total_fat: '5.67', saturated_fat: '0', polyunsaturated_fat: '0', monounsaturated_fat: '0', cholesterol: '0.145', sodium: '0.116', potassium: '0.839', total_carbohydrates: '0', diatary_fiber: '0', sugars: '0', protein: '48.08', vitamin_a: '2', vitamin_c: '5', calcium: '2', iron: '5', total_fat_per: '9', saturated_fat_per: '0', cholesterol_per: '48', sodium_per: '5', potassium_per: '25', total_carbohydrates_per: '0', diatary_fiber_per: '0'},
+                tofu: {calories: '158', calories_from_fat: '85', total_fat: '9.54', saturated_fat: '1.98', polyunsaturated_fat: '4.14', monounsaturated_fat: '2.7', cholesterol: '0', sodium: '0.027', potassium: '0.336', total_carbohydrates: '3.78', diatary_fiber: '1.98', sugars: '1.44', protein: '18.539', vitamin_a: '0', vitamin_c: '0', calcium: '45', iron: '20', total_fat_per: '14', saturated_fat_per: '9', cholesterol_per: '0', sodium_per: '2', potassium_per: '9', total_carbohydrates_per: '2', diatary_fiber_per: '9'},
+                salmon_fillet: {calories: '300', calories_from_fat: '162', total_fat: '18', saturated_fat: '3.75', polyunsaturated_fat: '6.3', monounsaturated_fat: '4.2', cholesterol: '0.098', sodium: '0.098', potassium: '0', total_carbohydrates: '0', diatary_fiber: '0', sugars: '0', protein: '33', vitamin_a: '3', vitamin_c: '12', calcium: '3', iron: '3', total_fat_per: '27', saturated_fat_per: '18', cholesterol_per: '33', sodium_per: '5', potassium_per: '0', total_carbohydrates_per: '0', diatary_fiber_per: '0'},
+                chicken_thigh: {calories: '285', calories_from_fat: '103', total_fat: '11.34', saturated_fat: '0', polyunsaturated_fat: '0', monounsaturated_fat: '0', cholesterol: '0', sodium: '0', potassium: '0', total_carbohydrates: '0', diatary_fiber: '0', sugars: '0', protein: '43.09', vitamin_a: '0', vitamin_c: '0', calcium: '0', iron: '0', total_fat_per: '18', saturated_fat_per: '0', cholesterol_per: '0', sodium_per: '0', potassium_per: '0', total_carbohydrates_per: '0', diatary_fiber_per: '0'},
+                strip_steak: {calories: '228', calories_from_fat: '60', total_fat: '6.6', saturated_fat: '0', polyunsaturated_fat: '0', monounsaturated_fat: '0', cholesterol: '0', sodium: '0', potassium: '0', total_carbohydrates: '0', diatary_fiber: '0', sugars: '0', protein: '38.4', vitamin_a: '0', vitamin_c: '0', calcium: '0', iron: '0', total_fat_per: '12', saturated_fat_per: '0', cholesterol_per: '0', sodium_per: '0', potassium_per: '0', total_carbohydrates_per: '0', diatary_fiber_per: '0'},
+                tilapia_fillet: {calories: '162', calories_from_fat: '26', total_fat: '2.85', saturated_fat: '0.9', polyunsaturated_fat: '0.6', monounsaturated_fat: '0.9', cholesterol: '0.084', sodium: '0.087', potassium: '0.507', total_carbohydrates: '0', diatary_fiber: '0', sugars: '0', protein: '33.75', vitamin_a: '0', vitamin_c: '0', calcium: '2', iron: '6', total_fat_per: '5', saturated_fat_per: '5', cholesterol_per: '29', sodium_per: '3', potassium_per: '15', total_carbohydrates_per: '0', diatary_fiber_per: '0'},
+                turkey_breast: {calories: '165', calories_from_fat: '6', total_fat: '0.75', saturated_fat: '0', polyunsaturated_fat: '0', monounsaturated_fat: '0', cholesterol: '0.105', sodium: '0.083', potassium: '0.488', total_carbohydrates: '0', diatary_fiber: '0', sugars: '0', protein: '42', vitamin_a: '0', vitamin_c: '0', calcium: '0', iron: '6', total_fat_per: '2', saturated_fat_per: '0', cholesterol_per: '35', sodium_per: '3', potassium_per: '14', total_carbohydrates_per: '0', diatary_fiber_per: '0'},
+                //
+                mozzarella: {calories: '170', calories_from_fat: '114', total_fat: '12.6', saturated_fat: '7.4', polyunsaturated_fat: '0.4', monounsaturated_fat: '3.8', cholesterol: '0.044', sodium: '0.354', potassium: '0.043', total_carbohydrates: '1.2', diatary_fiber: '0', sugars: '0.6', protein: '12.6', vitamin_a: '8', vitamin_c: '0', calcium: '28', iron: '2', total_fat_per: '20', saturated_fat_per: '38', cholesterol_per: '14', sodium_per: '14', potassium_per: '2', total_carbohydrates_per: '0', diatary_fiber_per: '0'},
+                parmesan: {calories: '111', calories_from_fat: '66', total_fat: '7.3', saturated_fat: '4.6', polyunsaturated_fat: '0.2', monounsaturated_fat: '2.1', cholesterol: '0.019', sodium: '0.453', potassium: '0.026', total_carbohydrates: '0.9', diatary_fiber: '0', sugars: '0.2', protein: '10.1', vitamin_a: '2', vitamin_c: '0', calcium: '34', iron: '1', total_fat_per: '11', saturated_fat_per: '23', cholesterol_per: '6', sodium_per: '19', potassium_per: '1', total_carbohydrates_per: '0', diatary_fiber_per: '0'},
+                quinoa: {calories: '68', calories_from_fat: '10', total_fat: '1.103', saturated_fat: '0', polyunsaturated_fat: '0', monounsaturated_fat: '0', cholesterol: '0', sodium: '0.004', potassium: '0.097', total_carbohydrates: '12.075', diatary_fiber: '1.594', sugars: '0', protein: '2.482', vitamin_a: '0', vitamin_c: '0', calcium: '1', iron: '5', total_fat_per: '2', saturated_fat_per: '0', cholesterol_per: '0', sodium_per: '0', potassium_per: '3', total_carbohydrates_per: '4', diatary_fiber_per: '6'},
+                edamame: {calories: '82', calories_from_fat: '37', total_fat: '4.139', saturated_fat: '0.51', polyunsaturated_fat: '1.984', monounsaturated_fat: '0.794', cholesterol: '0', sodium: '0', potassium: '0.097', total_carbohydrates: '2.722', diatary_fiber: '3.459', sugars: '1.134', protein: '7.938', vitamin_a: '0', vitamin_c: '6', calcium: '3', iron: '7', total_fat_per: '6', saturated_fat_per: '3', cholesterol_per: '0', sodium_per: '0', potassium_per: '0', total_carbohydrates_per: '1', diatary_fiber_per: '14'},
+                avocado: {calories: '145', calories_from_fat: '120', total_fat: '13.35', saturated_fat: '1.85', polyunsaturated_fat: '1.55', monounsaturated_fat: '8.5', cholesterol: '0', sodium: '0.007', potassium: '0.439', total_carbohydrates: '7.45', diatary_fiber: '5.9', sugars: '0.25', protein: '1.7', vitamin_a: '3', vitamin_c: '13', calcium: '1', iron: '3', total_fat_per: '21', saturated_fat_per: '9', cholesterol_per: '0', sodium_per: '1', potassium_per: '13', total_carbohydrates_per: '3', diatary_fiber_per: '24'},
+                walnut: {calories: '177', calories_from_fat: '159', total_fat: '17.718', saturated_fat: '1.772', polyunsaturated_fat: '13.2', monounsaturated_fat: '2.392', cholesterol: '0', sodium: '0', potassium: '0', total_carbohydrates: '3.544', diatary_fiber: '1.772', sugars: '0.886', protein: '4.43', vitamin_a: '0', vitamin_c: '0', calcium: '5', iron: '2', total_fat_per: '27', saturated_fat_per: '9', cholesterol_per: '0', sodium_per: '0', potassium_per: '0', total_carbohydrates_per: '1', diatary_fiber_per: '7'},
+                couscous: {calories: '64', calories_from_fat: '1', total_fat: '0.108', saturated_fat: '0', polyunsaturated_fat: '0.036', monounsaturated_fat: '0', cholesterol: '0', sodium: '0.003', potassium: '0.033', total_carbohydrates: '13.037', diatary_fiber: '0.794', sugars: '0.072', protein: '2.167', vitamin_a: '0', vitamin_c: '0', calcium: '0', iron: '1', total_fat_per: '0', saturated_fat_per: '0', cholesterol_per: '0', sodium_per: '0', potassium_per: '1', total_carbohydrates_per: '4', diatary_fiber_per: '3'},
+                sweet_corn: {calories: '46', calories_from_fat: '3', total_fat: '0.346', saturated_fat: '0.069', polyunsaturated_fat: '0.207', monounsaturated_fat: '0.138', cholesterol: '0', sodium: '0.001', potassium: '0.132', total_carbohydrates: '10.925', diatary_fiber: '1.383', sugars: '1.729', protein: '1.452', vitamin_a: '2', vitamin_c: '3', calcium: '0', iron: '1', total_fat_per: '1', saturated_fat_per: '0', cholesterol_per: '0', sodium_per: '0', potassium_per: '3', total_carbohydrates_per: '3', diatary_fiber_per: '6'},
+                button_mushroom: {calories: '16', calories_from_fat: '2', total_fat: '0.254', saturated_fat: '0.036', polyunsaturated_fat: '0.109', monounsaturated_fat: '0', cholesterol: '0', sodium: '0.001', potassium: '0.202', total_carbohydrates: '3.017', diatary_fiber: '1.236', sugars: '1.09', protein: '1.236', vitamin_a: '0', vitamin_c: '6', calcium: '0', iron: '30', total_fat_per: '0', saturated_fat_per: '0', cholesterol_per: '0', sodium_per: '0', potassium_per: '6', total_carbohydrates_per: '1', diatary_fiber_per: '5'},
+                almond: {calories: '164', calories_from_fat: '127', total_fat: '14.225', saturated_fat: '1.102', polyunsaturated_fat: '3.506', monounsaturated_fat: '8.915', cholesterol: '0', sodium: '0', potassium: '0.208', total_carbohydrates: '6.111', diatary_fiber: '3.506', sugars: '1.202', protein: '6.01', vitamin_a: '0', vitamin_c: '0', calcium: '8', iron: '6', total_fat_per: '22', saturated_fat_per: '5', cholesterol_per: '0', sodium_per: '0', potassium_per: '6', total_carbohydrates_per: '2', diatary_fiber_per: '14'},
+                kidney_bean: {calories: '48', calories_from_fat: '2', total_fat: '0.199', saturated_fat: '0.044', polyunsaturated_fat: '0.089', monounsaturated_fat: '0.089', cholesterol: '0', sodium: '0.146', potassium: '0.145', total_carbohydrates: '8.815', diatary_fiber: '3.056', sugars: '1.063', protein: '2.99', vitamin_a: '0', vitamin_c: '1', calcium: '1', iron: '4', total_fat_per: '0', saturated_fat_per: '0', cholesterol_per: '0', sodium_per: '6', potassium_per: '4', total_carbohydrates_per: '3', diatary_fiber_per: '12'},
+                cherry_tomato: {calories: '13', calories_from_fat: '0', total_fat: '0', saturated_fat: '0', polyunsaturated_fat: '0', monounsaturated_fat: '0', cholesterol: '0', sodium: '0.007', potassium: '0.127', total_carbohydrates: '2.668', diatary_fiber: '0.667', sugars: '1.334', protein: '0.667', vitamin_a: '7', vitamin_c: '10', calcium: '0', iron: '1', total_fat_per: '0', saturated_fat_per: '0', cholesterol_per: '0', sodium_per: '0', potassium_per: '3', total_carbohydrates_per: '1', diatary_fiber_per: '3'},
+                sous_vide_egg: {calories: '72', calories_from_fat: '45', total_fat: '5', saturated_fat: '1.6', polyunsaturated_fat: '0.7', monounsaturated_fat: '1.9', cholesterol: '0.186', sodium: '0.070', potassium: '0.067', total_carbohydrates: '0.4', diatary_fiber: '0', sugars: '0.4', protein: '6.3', vitamin_a: '5', vitamin_c: '0', calcium: '3', iron: '5', total_fat_per: '8', saturated_fat_per: '8', cholesterol_per: '62', sodium_per: '3', potassium_per: '2', total_carbohydrates_per: '0', diatary_fiber_per: '0'},
+                romanie_lettuce: {calories: '21', calories_from_fat: '0', total_fat: '0', saturated_fat: '0', polyunsaturated_fat: '0', monounsaturated_fat: '0', cholesterol: '0', sodium: '0.014', potassium: '0', total_carbohydrates: '4.205', diatary_fiber: '2.803', sugars: '1.402', protein: '1.402', vitamin_a: '4', vitamin_c: '70', calcium: '0', iron: '31', total_fat_per: '0', saturated_fat_per: '0', cholesterol_per: '0', sodium_per: '0', potassium_per: '0', total_carbohydrates_per: '1', diatary_fiber_per: '11'},
+                brown_rice: {calories: '175', calories_from_fat: '10', total_fat: '1.165', saturated_fat: '0', polyunsaturated_fat: '0.466', monounsaturated_fat: '0.466', cholesterol: '0', sodium: '0', potassium: '0', total_carbohydrates: '37.281', diatary_fiber: '1.165', sugars: '0', protein: '3.495', vitamin_a: '0', vitamin_c: '0', calcium: '0', iron: '9', total_fat_per: '2', saturated_fat_per: '0', cholesterol_per: '0', sodium_per: '0', potassium_per: '3', total_carbohydrates_per: '13', diatary_fiber_per: '5'},
+                whole_wheat_pasta: {calories: '211', calories_from_fat: '9', total_fat: '0.972', saturated_fat: '0.121', polyunsaturated_fat: '0.364', monounsaturated_fat: '0.121', cholesterol: '0', sodium: '5', potassium: '0.075', total_carbohydrates: '45.196', diatary_fiber: '4.738', sugars: '1.336', protein: '9.112', vitamin_a: '0', vitamin_c: '0', calcium: '2', iron: '10', total_fat_per: '1', saturated_fat_per: '1', cholesterol_per: '0', sodium_per: '0', potassium_per: '2', total_carbohydrates_per: '15', diatary_fiber_per: '19'},
+                sweet_potato: {calories: '198', calories_from_fat: '3', total_fat: '0.25', saturated_fat: '0', polyunsaturated_fat: '0.125', monounsaturated_fat: '0', cholesterol: '0', sodium: '0.014', potassium: '0.114', total_carbohydrates: '46.776', diatary_fiber: '6.629', sugars: '0.875', protein: '2.501', vitamin_a: '4', vitamin_c: '34', calcium: '3', iron: '5', total_fat_per: '0', saturated_fat_per: '0', cholesterol_per: '0', sodium_per: '0', potassium_per: '33', total_carbohydrates_per: '15', diatary_fiber_per: '26'},
+                broccoli: {calories: '19', calories_from_fat: '2', total_fat: '0.187', saturated_fat: '0', polyunsaturated_fat: '0', monounsaturated_fat: '0', cholesterol: '0', sodium: '0.019', potassium: '0.179', total_carbohydrates: '3.738', diatary_fiber: '1.495', sugars: '0.935', protein: '1.558', vitamin_a: '7', vitamin_c: '84', calcium: '2', iron: '2', total_fat_per: '0', saturated_fat_per: '0', cholesterol_per: '0', sodium_per: '1', potassium_per: '5', total_carbohydrates_per: '1', diatary_fiber_per: '6'},
+                egg_white: {calories: '25', calories_from_fat: '0', total_fat: '0', saturated_fat: '0', polyunsaturated_fat: '0', monounsaturated_fat: '0', cholesterol: '0', sodium: '0.089', potassium: '0', total_carbohydrates: '0.5', diatary_fiber: '0', sugars: '0', protein: '5.5', vitamin_a: '0', vitamin_c: '0', calcium: '0', iron: '0', total_fat_per: '0', saturated_fat_per: '0', cholesterol_per: '0', sodium_per: '3', potassium_per: '0', total_carbohydrates_per: '0', diatary_fiber_per: '0'},
+            }
+
+            console.log(products);
+            // console.log(products[0].chicken_thigh.calories);
+        </script>
+        <header class="head_bg">
+            <div class="container">
+                <div class="container_main">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 logo">
+                            <a href="index.html"><img class="logo-img" src="images/logo.png"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6  col-sm-3 col-xs-1"></div>
+                        <div class="col-lg-2 col-md-2  col-sm-5 col-xs-6">
+                            <div class="soc_icon">
+                                <ul>
+                                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                    <li><a data-bb="prompt" href="javascript:void(0)" onclick="mail_box();"><i class="fa fa-envelope-o"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="egg" style="padding-top: 60px;">
+            <div class="container ">
+                <div class="container_main">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12  col-xs-12 conn_tex text-center">
+                            <!--                            <div id="fittext1" class=" text-center htitle">
+                                                            <span id="typewriter" class="typewriter"></span>
+                                                            <span class="">&nbsp;</span><br>
+                                                        </div>-->
+                            <div id="intro" class="htitle">
+                                <div id="intro1"></div>
+                                <div id="intro2"></div>
+                                <div id="title"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div id="intro_new" class="htitle">
+                                <div id="intro11"></div>
+                                <div id="intro22"></div>
+                                <div id="intro33"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <article>
+                <div class="container">
+                    <div class="container_main">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 cabg">
+                                <img class="img-responsive" src="images/cabage.png">
+                            </div>
+                            <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 story">
+                                <div class="story_food text-right">
+                                    <h1 class="htitle">a story about food.</h1>
+                                    <p class="story_col">The Daily Cut is based on the simple premise that it shouldn’t
+                                        have to be <br>  a struggle to eat clean.   With the right ingredients and preparation techniques, anyone
+                                        <br>will be able to not only embark on a
+                                        clean eating journey, but enjoy it as well.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class=" container">
+                    <div class="container_main">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 your_food">
+                                <h1 class="htitle">what exactly goes into your food ?</h1>
+                                <p>The Daily Cut adheres to two basic principles across its entire menu - whole ingredients and freshly-prepared.
+                                    This is why you will never find any processed foods in our open kitchens or service counters, where everything
+                                    is made before your eyes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="row">
+
+                                    <div class="col-lg-12 col-md-12">
+                                        <h4 class="pro_tit">PROTEINS</h4>
+                                    </div>
+
+
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                        <!--                                        <input type="checkbox" value="chicken_brest" onclick="calc()" name="products"> -->
+                                        <select onchange="calcselect()" class="product_count" name="chicken_brest">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;chicken breast<br>
+                                        <!--                                        <input type="checkbox" value="tofu" onclick="calc()" name="products">-->
+                                        <select onchange="calcselect();" class="product_count" name="tofu">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;tofu<br>
+                                        <!--                                        <input type="checkbox" value="salmon_fillet" onclick="calc()" name="products">-->
+                                        <select onchange="calcselect();" class="product_count" name="salmon_fillet">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;salmon fillet
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pro_line">
+                                        <!--                                        <input type="checkbox" value="chicken_thigh" onclick="calc()" name="products"> -->
+                                        <select onchange="calcselect();" class="product_count" name="chicken_thigh">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;chicken thigh<br>
+                                        <!--                                        <input type="checkbox" value="strip_steak" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="strip_steak">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;strip steak
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pro_line">
+                                        <!--                                        <input type="checkbox" value="tilapia_fillet" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="tilapia_fillet">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;tilapia fillet<br>
+                                        <!--                                        <input type="checkbox" value="turkey_breast" name="products"  onclick="calc()">-->
+                                        <select onchange="calcselect();" class="product_count" name="turkey_breast">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;turkey breast
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-lg-12 col-md-12">
+                                        <h4 class="pro_tit">COMPLEX CARBS</h4>
+                                    </div>
+
+
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                        <!--                                        <input type="checkbox" value="sweet_potato" name="products"  onclick="calc()">-->
+                                        <select onchange="calcselect();" class="product_count" name="sweet_potato">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;sweet potato<br>
+                                        <!--                                        <input type="checkbox" value="whole_wheat_pasta" name="products"  onclick="calc()">-->
+                                        <select onchange="calcselect();" class="product_count" name="whole_wheat_pasta">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;whole-wheat pasta
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pro_line">
+                                        <!--                                        <input type="checkbox" value="brown_rice" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="brown_rice">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;brown rice<br>
+
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pro_line">
+                                        <!--                                        <input type="checkbox" value="romanie_lettuce" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="romanie_lettuce">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>romaine lettuce&nbsp;<br>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+
+
+                                    <div class="col-lg-12">
+                                        <h4 class="pro_tit">SUPPLEMENTS</h4>
+                                    </div>
+
+
+
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pro_line">
+
+                                        <!--                                        <input type="checkbox" value="sous_vide_egg" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="sous_vide_egg">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;sous vide egg<br>
+                                        <!--                                        <input type="checkbox" value="cherry_tomato" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="cherry_tomato">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;cherry tomato<br>
+                                        <!--                                        <input type="checkbox" value="kidney_bean" name="products"  onclick="calc()">-->
+                                        <select onchange="calcselect();" class="product_count" name="kidney_bean">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;kidney bean<br>
+                                        <!--                                        <input type="checkbox" value="almond" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="almond">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;almond<br>
+                                        <!--                                        <input type="checkbox" value="button_mushroom" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="button_mushroom">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;button mushroom
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pro_line">
+                                        <!--                                        <input type="checkbox" value="egg_white" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="egg_white">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;egg white<br>
+                                        <!--                                        <input type="checkbox" value="sweet_corn" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="sweet_corn">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;sweet corn<br>
+                                        <!--                                        <input type="checkbox" value="couscous" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="couscous">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;couscous<br>
+                                        <!--                                        <input type="checkbox" value="walnut" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="walnut">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;walnut<br>
+                                        <!--                                        <input type="checkbox" value="avocado" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="avocado">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;avocado
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pro_line">
+                                        <!--                                        <input type="checkbox" value="broccoli" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="broccoli">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;broccoli<br>
+                                        <!--                                        <input type="checkbox" value="edamame" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="edamame">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;edamame<br>
+                                        <!--                                        <input type="checkbox" value="quinoa" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="quinoa">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;quinoa<br>
+                                        <!--                                        <input type="checkbox" value="parmesan" name="products"  onclick="calc()">-->
+                                        <select onchange="calcselect();" class="product_count" name="parmesan">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;parmesan<br>
+                                        <!--                                        <input type="checkbox" value="mozzarella" name="products"  onclick="calc()"> -->
+                                        <select onchange="calcselect();" class="product_count" name="mozzarella">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>&nbsp;mozzarella
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 "></div>
+                            <div class="col-lg-5 col-md-5 col-sm-11 nutro">
+
+
+                                <div class="col-lg-12 nutro_fact row_pading  bor2">
+                                    NUTRITION FACTS
+                                </div>
+
+
+
+                                <div class="col-lg-12 bor row_pading ">
+                                    Amount Per Serving
+                                </div>
+
+
+                                <!--                                    <div class="row">-->
+
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 bor row_pading">Calories <span class="nutro_light calories" id="calories">175</span></div>
+
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5  nutro_light text-right bor row_pading">Calories from Fat <span class="calories_from_fat">10</span></div>
+
+                                <!--                                    </div>-->
+
+
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nutro_light text-right bor row_pading">% Daily Value*</div>
+
+
+
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7  row_pading">Total Fat  <span class="nutro_light total_fat"> 1.165</span>g</div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 text-right row_pading"><span class="total_fat_per">2</span>%</div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 "></div>
+                                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-6  nutro_light">Saturated Fat   <span class="saturated_fat">0</span>g</div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 text-right "><span class="saturated_fat_per">0</span>%</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-6 nutro_light">Polyunsaturated Fat   <span class="polyunsaturated_fat">0.466</span>g</div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-6 nutro_light">Monosaturated Fat   <span class="monounsaturated_fat">0.466</span>g</div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7 ">Cholesterol <span class="nutro_light"> <span class="cholesterol">0</span>mg</span></div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 text-right"><span class="cholesterol_per">0</span>%</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7 ">Sodium   <span class="nutro_light"><span class="sodium">0</span>mg</span></div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 text-right"><span class="sodium_per">0</span>%</div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7 ">Potassium   <span class="nutro_light"><span class="potassium">117</span>mg</span></div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 text-right"><span class="potassium_per">3</span>%</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7 ">Total Carbohydrate   <span class="nutro_light"><span class="total_carbohydrates">37.281</span>g</span></div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 text-right"><span class="total_carbohydrates_per">13</span>%</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                                    <div class="col-lg-7 col-md-7 col-sm- col-xs-7  nutro_light">Dietary Fiber   <span class="diatary_fiber">1.165</span>g</div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 text-right"><span class="diatary_fiber_per">5</span>%</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                                    <div class="col-lg-7 col-md-7 col-sm-7 nutro_light">Sugars   <span class="sugars">0</span>g</div>
+                                    <div class="col-lg-4"></div>
+                                </div>
+
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7 bor row_pading">Protein  <span class="nutro_light"> <span class="protein">3.495</span>g</span></div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 bor row_pading">&nbsp;</div>
+
+                                <div class="row base">
+                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 " style="padding: 0;">Vitamin A 	</div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" ><span class="vitamin_a">0</span>%</div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center dot"><i class="fa fa-circle circle_size"></i>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 col-xs-5">
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">Vitamin C</div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><span class="vitamin_c">0</span>%</div>
+                                    </div>
+                                </div>
+                                <div class="row  base">
+                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 ">
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 " style="padding: 0;">Calcium  	</div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><span class="calcium">0</span>%</div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center dot "><i class="fa fa-circle circle_size"></i>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 ">
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"> Iron   </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> <span class="iron">9</span>%</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12 nutro_light bor-up">* Percent Daily Values are based on a 2,000 calorie diet.<br>
+                                    Your diet values may be higher or lower depending on <br>your calorie needs.</div>
+
+
+
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="container">
+                    <div class="container_main">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <img class="img-responsive" alt="" src="images/mushroom.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="container">
+                    <div class="container_main">
+                        <div class="row contact_main">
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                                <div class="htitle">
+                                    one raffles place
+                                </div>
+                                <p>
+                                    1 RAFFLES PLACE<br>#B1-31<br>SINGAPORE 048616
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                                <h4 class="htitle">
+                                    galaxis
+                                </h4>
+                                <p>
+                                    1 FUSIONOPOLIS PLACE<br>#01-22/23<br>SINGAPORE 138522
+                                </p>
+                            </div>
+                            <!--                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                                                            <h4 class="htitle">
+                                                                heartland mall
+                                                            </h4>
+                                                            <p>
+                                                                205 HOUGANG STREET 21<br>#01-08<br>SINGAPORE 530205
+                                                            </p>
+                                                        </div>
+
+
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                                                            <h4 class="htitle">
+                                                                marina bay tower
+                                                            </h4>
+                                                            <p>
+                                                                2 MARINA BLVD<br>#B1-31<br>SINGAPORE 048616
+                                                            </p>
+                                                        </div>-->
+
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="fish">
+                <div class="container">
+
+                    <div class="modal fade" id="mailbox" tabindex="-1" role="dialog" aria-labelledby="playlistModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title htitle" id="playlistModalLabel">contact us</h4>
+                                    <p>Drop us a note and we will get back in touch with you. </p>
+                                </div>
+                                <div class="modal-body">
+                                    <!--<form class="addNew" role="form" method="POST" action="">-->
+                                    <div class="form-group">
+                                        <label>NAME</label>
+                                        <input type="text" name="play_list_name" class="form-control" value="" id="play_list_name" placeholder=""/>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>EMAIL</label>
+                                        <input type="text" name="play_list_email" class="form-control" value="" id="play_list_email" placeholder=""/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>MESSAGE</label>
+                                        <textarea class="form-control" rows="5" id="comment" name="comment"> </textarea>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer" style="text-align: center;">
+                                    <button type="button" id="submit" class="btn btn-white" data-dismiss="modal"><i class="fa fa-envelope-o fa-2x"></i></button>
+
+                                    <!--</form>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <script type="text/javascript">
+            WebFontConfig = {
+                google: {families: ['Oswald:400,300,700:latin']}
+            };
+            (function() {
+                var wf = document.createElement('script');
+                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+
+            function calcselect() {
+                var selectcount = $("select.product_count option:selected[value!='']").length;
+                // alert(selectcount);
+                var checkedValues = [];
+                $('select.product_count').each(function() {
+                    if ($(this).val() != "") {
+//                        alert($(this).val());
+//                        alert($(this).attr("name"));
+                        // checkedValues1 = $(this).attr("name");
+                        checkedValues.push($(this).attr("name"))
+                    }
+                });
+                var calories = 0;
+                var calories_from_fat = 0;
+                var total_fat = 0;
+                var saturated_fat = 0;
+                var polyunsaturated_fat = 0;
+                var monounsaturated_fat = 0;
+                var cholesterol = 0;
+                var sodium = 0;
+                var potassium = 0;
+                var total_carbohydrates = 0;
+                var diatary_fiber = 0;
+                var sugars = 0;
+                var protein = 0;
+                //vitamins
+                var vitamin_a = 0;
+                var vitamin_c = 0;
+                var calcium = 0;
+                var iron = 0;
+                //vitamins per
+                var vitamin_a_c = 0;
+                var vitamin_c_c = 0;
+                var calcium_c = 0;
+                var iron_c = 0;
+                //per
+                var total_fat_per = 0;
+                var saturated_fat_per = 0;
+                var cholesterol_per = 0;
+                var sodium_per = 0;
+                var potassium_per = 0;
+                var total_carbohydrates_per = 0;
+                var diatary_fiber_per = 0;
+                //
+                var total_fat_per_c = 0;
+                var saturated_fat_per_c = 0;
+                var cholesterol_per_c = 0;
+                var sodium_per_c = 0;
+                var potassium_per_c = 0;
+                var total_carbohydrates_per_c = 0;
+                var diatary_fiber_per_c = 0;
+                //console.log(checkedValues1);
+//                for (var c = 0; c < checkedValues1.length; c++) {
+//                    var product_count = $("select[name='" + checkedValues1[c] + "']").val();
+//                    var product_name = checkedValues1[c];
+//                    // alert(checkedValues1[c].val());
+//                }
+                for (var i = 0; i < checkedValues.length; i++) {
+                    var someval = checkedValues[i];
+                    var product_count = $("select[name='" + checkedValues[i] + "']").val();
+
+                    calories += parseFloat(products[someval]["calories"]) * parseFloat(product_count);
+                    calories_from_fat += parseFloat(products[someval]["calories_from_fat"]) * parseFloat(product_count);
+                    //                    calories_from_fat += parseFloat(products[someval]["calories_from_fat"]);
+                    total_fat += parseFloat(products[someval]["total_fat"]) * parseFloat(product_count);
+                    saturated_fat += parseFloat(products[someval]["saturated_fat"]) * parseFloat(product_count);
+                    polyunsaturated_fat += parseFloat(products[someval]["polyunsaturated_fat"]) * parseFloat(product_count);
+                    monounsaturated_fat += parseFloat(products[someval]["monounsaturated_fat"]) * parseFloat(product_count);
+                    cholesterol += parseFloat(products[someval]["cholesterol"]) * parseFloat(product_count) * 1000;
+                    sodium += parseFloat(products[someval]["sodium"]) * parseFloat(product_count) * 1000;
+                    potassium += parseFloat(products[someval]["potassium"]) * parseFloat(product_count) * 1000;
+                    total_carbohydrates += parseFloat(products[someval]["total_carbohydrates"]) * parseFloat(product_count);
+                    diatary_fiber += parseFloat(products[someval]["diatary_fiber"]) * parseFloat(product_count);
+                    sugars += parseFloat(products[someval]["sugars"]) * parseFloat(product_count);
+                    protein += parseFloat(products[someval]["protein"]) * parseFloat(product_count);
+                    //
+                    if (products[someval]["vitamin_a"] != 0) {
+                        //alert(products[someval]["total_fat_per"]);
+                        vitamin_a_c++
+                        vitamin_a += (parseFloat(products[someval]["vitamin_a"]) * parseFloat(product_count));
+                    }
+                    if (products[someval]["vitamin_c"] != 0) {
+                        //alert(products[someval]["total_fat_per"]);
+                        vitamin_c_c++
+                        vitamin_c += (parseFloat(products[someval]["vitamin_c"]) * parseFloat(product_count));
+                    }
+                    if (products[someval]["calcium"] != 0) {
+                        //alert(products[someval]["total_fat_per"]);
+                        calcium_c++
+                        calcium += (parseFloat(products[someval]["calcium"]) * parseFloat(product_count));
+                    }
+                    if (products[someval]["iron"] != 0) {
+                        //alert(products[someval]["total_fat_per"]);
+                        iron_c++
+                        iron += (parseFloat(products[someval]["iron"]) * parseFloat(product_count));
+                    }
+                    //
+                    if (products[someval]["total_fat_per"] != 0) {
+                        //alert(products[someval]["total_fat_per"]);
+                        total_fat_per_c++
+                        total_fat_per += (parseFloat(products[someval]["total_fat_per"]) * parseFloat(product_count));
+                    }
+                    if (products[someval]["saturated_fat_per"] != 0) {
+                        console.log("saturated_fat_per->" + products[someval]["saturated_fat_per"])
+                        //alert(products[someval]["saturated_fat_per"]);
+                        saturated_fat_per_c++
+                        saturated_fat_per += (parseFloat(products[someval]["saturated_fat_per"]) * parseFloat(product_count));
+                    }
+                    if (products[someval]["cholesterol_per"] != 0) {
+                        console.log("cholesterol_per->" + products[someval]["cholesterol_per"])
+                        //alert(products[someval]["cholesterol_per"]);
+                        cholesterol_per_c++
+                        cholesterol_per += (parseFloat(products[someval]["cholesterol_per"]) * parseFloat(product_count));
+                    }
+                    if (products[someval]["sodium_per"] != 0) {
+                        //alert(products[someval]["sodium_per"]);
+                        sodium_per_c++
+                        sodium_per += (parseFloat(products[someval]["sodium_per"]) * parseFloat(product_count));
+                    }
+                    if (products[someval]["potassium_per"] != 0) {
+                        //alert(products[someval]["potassium_per"]);
+                        potassium_per_c++
+                        potassium_per += (parseFloat(products[someval]["potassium_per"]) * parseFloat(product_count));
+                    }
+                    if (products[someval]["total_carbohydrates_per"] != 0) {
+                        // alert(products[someval]["total_carbohydrates_per"]);
+                        console.log("total_carbohydrates_per->" + products[someval]["total_carbohydrates_per"])
+                        total_carbohydrates_per_c++
+                        total_carbohydrates_per += (parseFloat(products[someval]["total_carbohydrates_per"]) * parseFloat(product_count));
+                    }
+                    if (products[someval]["diatary_fiber_per"] != 0) {
+                        //alert(products[someval]["diatary_fiber_per"]);
+                        diatary_fiber_per_c++
+                        diatary_fiber_per += (parseFloat(products[someval]["diatary_fiber_per"]) * parseFloat(product_count));
+                    }
+                }
+                $(".calories").html(parseFloat(calories).toFixed(2));
+                $(".calories_from_fat").html(parseFloat(calories_from_fat).toFixed(2));
+                $(".total_fat").html(parseFloat(total_fat).toFixed(2));
+                $(".saturated_fat").html(parseFloat(saturated_fat).toFixed(3));
+                $(".polyunsaturated_fat").html(parseFloat(polyunsaturated_fat).toFixed(3));
+                $(".monounsaturated_fat").html(parseFloat(monounsaturated_fat).toFixed(3));
+                $(".cholesterol").html(parseFloat(cholesterol).toFixed(2));
+                $(".sodium").html(parseFloat(sodium).toFixed(2));
+                $(".potassium").html(parseFloat(potassium).toFixed(2));
+                $(".total_carbohydrates").html(parseFloat(total_carbohydrates).toFixed(2));
+                $(".diatary_fiber").html(parseFloat(diatary_fiber).toFixed(2));
+                $(".sugars").html(parseFloat(sugars).toFixed(2));
+                $(".protein").html(parseFloat(protein).toFixed(2));
+                //
+                vitamin_a = parseFloat(vitamin_a);
+                vitamin_a = vitamin_a || 0
+                $(".vitamin_a").html(parseFloat(vitamin_a).toFixed(2));
+
+                vitamin_c = parseFloat(vitamin_c);
+                //console.log("final_total_fat_per->" + total_fat_per);
+                vitamin_c = vitamin_c || 0
+                $(".vitamin_c").html(parseFloat(vitamin_c).toFixed(2));
+
+                calcium = parseFloat(calcium);
+                //console.log("final_total_fat_per->" + total_fat_per);
+                calcium = calcium || 0
+                $(".calcium").html(parseFloat(calcium).toFixed(2));
+
+                iron = parseFloat(iron);
+                //console.log("final_total_fat_per->" + total_fat_per);
+                iron = iron || 0
+                $(".iron").html(parseFloat(iron).toFixed(2));
+                //
+                total_fat_per = parseFloat(total_fat_per);
+                //console.log("final_total_fat_per->" + total_fat_per);
+                total_fat_per = total_fat_per || 0
+                $(".total_fat_per").html(parseFloat(total_fat_per).toFixed(2));
+
+                saturated_fat_per = parseFloat(saturated_fat_per);
+                saturated_fat_per = saturated_fat_per || 0
+                $(".saturated_fat_per").html(parseFloat(saturated_fat_per).toFixed(2));
+
+                cholesterol_per = parseFloat(cholesterol_per);
+                cholesterol_per = cholesterol_per || 0
+                $(".cholesterol_per").html(parseFloat(cholesterol_per).toFixed(2));
+
+                sodium_per = parseFloat(sodium_per);
+                sodium_per = sodium_per || 0
+                $(".sodium_per").html(parseFloat(sodium_per).toFixed(2));
+
+                potassium_per = parseFloat(potassium_per)
+                potassium_per = potassium_per || 0
+                $(".potassium_per").html(parseFloat(potassium_per).toFixed(2));
+
+                total_carbohydrates_per = parseFloat(total_carbohydrates_per);
+                total_carbohydrates_per = total_carbohydrates_per || 0
+                //console.log("final_total_carbohydrates_per->" + total_carbohydrates_per);
+                $(".total_carbohydrates_per").html(parseFloat(total_carbohydrates_per).toFixed(2));
+
+                diatary_fiber_per = parseFloat(diatary_fiber_per);
+                diatary_fiber_per = diatary_fiber_per || 0
+                $(".diatary_fiber_per").html(parseFloat(diatary_fiber_per).toFixed(2));
+
+            }
+            calcselect();
+
+            WebFontConfig = {
+                google: {families: ['Oswald:400,300,700:latin']}
+            };
+            (function() {
+                var wf = document.createElement('script');
+                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+
+            //            bootbox.prompt("What is your name?", function(result) {
+            //                if (result === null) {
+            //                    Example.show("Prompt dismissed");
+            //                } else {
+            //                    Example.show("Hi <b>" + result + "</b>");
+            //                }
+            //            });
+
+            function mail_box() {
+                $("#mailbox").modal({
+                    "backdrop": "static",
+                    "keyboard": true,
+                    "show": true
+                });
+            }
+        </script>
+        <script>
+            $("#submit").click(function() {
+                var name = $("#play_list_name").val();
+                var email = $("#play_list_email").val();
+                var comment = $("#comment").val();
+
+
+// Returns successful data submission message when the entered information is stored in database.
+                var dataString = 'play_list_name=' + name + '&play_list_email=' + email + '&comment=' + comment;
+                if (name == '' || email == '' || comment == '')
+                {
+                    alert("Please Fill All Fields");
+                }
+                else
+                {
+                    //AJAX code to submit form.
+                    $.ajax({
+                        type: "POST",
+                        url: "mail.php",
+                        data: dataString,
+                        cache: false,
+                        success: function(result) {
+                            alert(result);
+                        }
+                    });
+                }
+                return false;
+            });
+
+        </script>
+    </body>
+</html>
